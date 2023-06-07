@@ -1,38 +1,171 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+body {
+  background-color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.card-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-card {
+  background-color: rgb(129, 2, 2);
+  border: 1px solid rgb(153, 35, 2);
+  border-radius: 2%;
+  box-shadow: 0.5px 0.5px 4px 3px rgb(6, 254, 76);
+  color: white;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  width: 20%;
+}
+.card-heading {
+  color: rgb(112, 255, 179);
+  font-family: "Geologica", sans-serif;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-lang-genre {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.start-end {
+  margin-bottom: 0.7rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.action-btn {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.card-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.card-image img {
+  border-radius: 2%;
+}
+.button {
+  background-color: rgb(20, 20, 20);
+  border-radius: 4em;
+  color: white;
+  cursor: pointer;
+  font-family: "Geologica", sans-serif;
+  font-size: 14px;
+  padding: 0.8em 1.8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  user-select: none;
+  webkit-transition-duration: 0.4s;
+}
+.button:hover {
+  background-color: #3a3a3a;
+  transition-duration: 0.1s;
+}
+.button:after {
+  border-radius: 4em;
+  box-shadow: 0 0 10px 40px white;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.5s;
+  width: 100%;
+}
+.button:active:after {
+  border-radius: 4em;
+  box-shadow: 0 0 0 0 white;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  transition: 0s;
+}
+.button:active {
+  top: 1px;
+}
+.card-summary {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  line-height: 1.7;
+  padding: 0 10rem;
+  text-align: justify;
+}
+.summary-heading {
+  background-image: url("https://media4.giphy.com/media/aRZ4vTsHnyW6A/giphy.webp?cid=ecf05e47n0w8r3fwf1wv11j9hdufjzkjrmcp22amtdie2jzy&ep=v1_gifs_search&rid=giphy.webp&ct=g");
+  border: 2px solid white;
+  border-radius: 5px;
+  color: rgb(123, 255, 105);
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 20%;
+}
+.summary-img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.summary-img img {
+  margin-bottom: 2rem;
+  width: 28%;
+}
+.ticket {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.ticket button {
+  background-image: url("https://media4.giphy.com/media/aRZ4vTsHnyW6A/giphy.webp?cid=ecf05e47n0w8r3fwf1wv11j9hdufjzkjrmcp22amtdie2jzy&ep=v1_gifs_search&rid=giphy.webp&ct=g");
+  border: 1px solid white;
+  color: rgb(208, 249, 165);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 3rem 0;
+  padding: 1rem 2rem;
+}
+.form {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.form form {
+  color: white;
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+.inp {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: space-between;
 }
-
-.App-link {
-  color: #61dafb;
+.inp input {
+  border-radius: 10px;
+  font-size: large;
+  margin: 1rem 0;
+  padding: 1rem;
+  width: 60%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inp label {
+  color: rgb(157, 247, 172);
+  font-size: 1.3rem;
+}
+.form button {
+  background-image: url("https://media3.giphy.com/media/5vgHoMiknf5iJl8FH1/200w.webp?cid=ecf05e47b3cz62bxrs3fbc2i07kg4fv3q5tn9a2s9snfai7k&ep=v1_gifs_search&rid=200w.webp&ct=g");
+  border: 1px solid white;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 50%;
 }
